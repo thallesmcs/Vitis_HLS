@@ -1,0 +1,11 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_adder_ir
+Args:            
+  - Callee:          'adder(ap_int<8>&, ap_int<8>, ap_int<8>)'
+    DebugLoc:        { File: adder.cpp, Line: 3, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_adder_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
