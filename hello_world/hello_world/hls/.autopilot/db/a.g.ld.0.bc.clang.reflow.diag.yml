@@ -1,0 +1,21 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_hello_world_ir
+Args:            
+  - Callee:          'hello_world(int, char*)'
+    DebugLoc:        { File: hello_world.cpp, Line: 3, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_hello_world_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_7_1
+  - String:          '> at '
+  - LoopLoc:         'hello_world.cpp:7:25'
+  - String:          ' '
+...

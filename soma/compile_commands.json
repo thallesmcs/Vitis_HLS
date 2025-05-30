@@ -1,0 +1,15 @@
+[
+  {
+    "directory": "D:\\Projetos_HLS\\soma",
+    "arguments": [
+      "E:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=E:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=E:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=soma",
+      "-c",
+      "D:/Projetos_HLS/soma/soma.cpp"
+    ],
+    "file": "D:/Projetos_HLS/soma/soma.cpp"
+  }
+]

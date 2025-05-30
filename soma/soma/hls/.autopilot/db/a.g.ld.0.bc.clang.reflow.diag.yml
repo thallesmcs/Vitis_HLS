@@ -1,0 +1,11 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_soma_ir
+Args:            
+  - Callee:          'soma(ap_int<7>, ap_int<7>, ap_int<8>&)'
+    DebugLoc:        { File: soma.cpp, Line: 3, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_soma_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...

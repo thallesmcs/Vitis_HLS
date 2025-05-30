@@ -1,0 +1,32 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/Projetos_HLS/hello_world/hello_world 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=D:/Projetos_HLS/hello_world/hello_world.cpp' from D:/Projetos_HLS/hello_world/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/Projetos_HLS/hello_world/hello_world.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=hello_world_tb.cpp' from D:/Projetos_HLS/hello_world/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file 'D:/Projetos_HLS/hello_world/hello_world_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=result.golden.dat' from D:/Projetos_HLS/hello_world/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'D:/Projetos_HLS/hello_world/result.golden.dat' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=hello_world' from D:/Projetos_HLS/hello_world/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/Projetos_HLS/hello_world/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z007sclg400-1' from D:/Projetos_HLS/hello_world/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z007s-clg400-1'
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from D:/Projetos_HLS/hello_world/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/Projetos_HLS/hello_world/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code hello_world.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code D:/Projetos_HLS/hello_world/hello_world_tb.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code hello_world.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Linking hardware code
+INFO: [HLS 211-200] Transforming hardware bitcode
+INFO: [HLS 211-200] Linking executable
+ld.lld: error: undefined symbol: WinMain
+>>> referenced by libmingw32.a(lib64_libmingw32_a-crt0_c.o):(.text)
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+slxcmd:0:0: warning: Non-zero exit code: 1 returned by 'INFO: [HLS 211-200] Linking executable'
+ERROR: [SIM 211-200] Code Analyzer execution failed. Consider running the classic C simulation instead by disabling the hls.csim.code_analyzer option in the config file.
+ERROR: Problem running csim: child process exited abnormally
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 4.842 seconds; peak allocated memory: 149.078 MB.

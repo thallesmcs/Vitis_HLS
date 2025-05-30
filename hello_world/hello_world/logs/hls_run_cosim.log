@@ -1,0 +1,148 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/Projetos_HLS/hello_world/hello_world 
+INFO: [HLS 200-1611] Setting target device to 'xc7z007s-clg400-1'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=D:/Projetos_HLS/hello_world/hello_world.cpp' from D:/Projetos_HLS/hello_world/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/Projetos_HLS/hello_world/hello_world.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=hello_world_tb.cpp' from D:/Projetos_HLS/hello_world/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file 'D:/Projetos_HLS/hello_world/hello_world_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=result.golden.dat' from D:/Projetos_HLS/hello_world/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'D:/Projetos_HLS/hello_world/result.golden.dat' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=hello_world' from D:/Projetos_HLS/hello_world/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/Projetos_HLS/hello_world/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7z007sclg400-1' from D:/Projetos_HLS/hello_world/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying ini 'cosim.rtl=vhdl' from D:/Projetos_HLS/hello_world/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'cosim.trace_level=all' from D:/Projetos_HLS/hello_world/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from D:/Projetos_HLS/hello_world/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/Projetos_HLS/hello_world/hls_config.cfg(5)
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "E:/Xilinx/Vitis/2024.2/vcxx/libexec/clang++"
+   Compiling hello_world_tb.cpp_pre.cpp.tb.cpp
+   Compiling hello_world.cpp_pre.cpp.tb.cpp
+   Compiling apatb_hello_world.cpp
+   Compiling apatb_hello_world_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Test passed !
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-322] Starting VHDL simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+D:\Projetos_HLS\hello_world\hello_world\hls\sim\vhdl>set PATH= 
+
+D:\Projetos_HLS\hello_world\hello_world\hls\sim\vhdl>call E:/Xilinx/Vivado/2024.2/bin/xelab xil_defaultlib.apatb_hello_world_top glbl -Oenable_linking_all_libraries  -prj hello_world.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims -L unisims_ver -L xpm  -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib "ieee_proposed=./ieee_proposed" -s hello_world -debug all 
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_hello_world_top glbl -Oenable_linking_all_libraries -prj hello_world.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims -L unisims_ver -L xpm -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib ieee_proposed=./ieee_proposed -s hello_world -debug all 
+Multi-threading is on. Using 10 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projetos_HLS/hello_world/hello_world/hls/sim/vhdl/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Projetos_HLS/hello_world/hello_world/hls/sim/vhdl/AESL_sim_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Projetos_HLS/hello_world/hello_world/hls/sim/vhdl/AESL_automem_mensagem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_mensagem'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Projetos_HLS/hello_world/hello_world/hls/sim/vhdl/hello_world.autotb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'apatb_hello_world_top'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Projetos_HLS/hello_world/hello_world/hls/sim/vhdl/hello_world.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hello_world'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Projetos_HLS/hello_world/hello_world/hls/sim/vhdl/hello_world_flow_control_loop_pipe_sequential_init.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hello_world_flow_control_loop_pipe_sequential_init'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Projetos_HLS/hello_world/hello_world/hls/sim/vhdl/hello_world_hello_world_Pipeline_VITIS_LOOP_7_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hello_world_hello_world_Pipeline_VITIS_LOOP_7_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Projetos_HLS/hello_world/hello_world/hls/sim/vhdl/hello_world_hello_world_Pipeline_VITIS_LOOP_7_1_texto_ROM_AUTO_1R.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hello_world_hello_world_Pipeline_VITIS_LOOP_7_1_texto_ROM_AUTO_1R'
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling module work.glbl
+Compiling architecture rtl of entity xil_defaultlib.hello_world_hello_world_Pipeline_VITIS_LOOP_7_1_texto_ROM_AUTO_1R [hello_world_hello_world_pipeline...]
+Compiling architecture behav of entity xil_defaultlib.hello_world_flow_control_loop_pipe_sequential_init [hello_world_flow_control_loop_pi...]
+Compiling architecture behav of entity xil_defaultlib.hello_world_hello_world_Pipeline_VITIS_LOOP_7_1 [hello_world_hello_world_pipeline...]
+Compiling architecture behav of entity xil_defaultlib.hello_world [hello_world_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_mensagem [aesl_automem_mensagem_default]
+Compiling architecture behav of entity xil_defaultlib.apatb_hello_world_top
+Built simulation snapshot hello_world
+
+****** xsim v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Fri May 23 20:01:08 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/hello_world/xsim_script.tcl
+# xsim {hello_world} -autoloadwcfg -tclbatch {hello_world.tcl}
+Time resolution is 1 ps
+source hello_world.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(memory) -into $coutputgroup]
+## add_wave /apatb_hello_world_top/AESL_inst_hello_world/mensagem_d0 -into $return_group -radix hex
+## add_wave /apatb_hello_world_top/AESL_inst_hello_world/mensagem_we0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_hello_world_top/AESL_inst_hello_world/mensagem_ce0 -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_hello_world_top/AESL_inst_hello_world/mensagem_address0 -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(wire) -into $cinputgroup]
+## add_wave /apatb_hello_world_top/AESL_inst_hello_world/valor -into $return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_hello_world_top/AESL_inst_hello_world/ap_start -into $blocksiggroup
+## add_wave /apatb_hello_world_top/AESL_inst_hello_world/ap_done -into $blocksiggroup
+## add_wave /apatb_hello_world_top/AESL_inst_hello_world/ap_idle -into $blocksiggroup
+## add_wave /apatb_hello_world_top/AESL_inst_hello_world/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_hello_world_top/AESL_inst_hello_world/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_hello_world_top/AESL_inst_hello_world/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_hello_world_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_hello_world_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_hello_world_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_hello_world_top/LENGTH_mensagem -into $tb_portdepth_group -radix hex
+## add_wave /apatb_hello_world_top/LENGTH_valor -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(memory) -into $tbcoutputgroup]
+## add_wave /apatb_hello_world_top/mensagem_d0 -into $tb_return_group -radix hex
+## add_wave /apatb_hello_world_top/mensagem_we0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_hello_world_top/mensagem_ce0 -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_hello_world_top/mensagem_address0 -into $tb_return_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(wire) -into $tbcinputgroup]
+## add_wave /apatb_hello_world_top/valor -into $tb_return_group -radix hex
+## save_wave_config hello_world.wcfg
+## run all
+Note: simulation done!
+Time: 365 ns  Iteration: 1  Process: /apatb_hello_world_top/generate_sim_done_proc  File: D:/Projetos_HLS/hello_world/hello_world/hls/sim/vhdl/hello_world.autotb.vhd
+Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
+Time: 365 ns  Iteration: 1  Process: /apatb_hello_world_top/generate_sim_done_proc  File: D:/Projetos_HLS/hello_world/hello_world/hls/sim/vhdl/hello_world.autotb.vhd
+$finish called at time : 365 ns : File "D:/Projetos_HLS/hello_world/hello_world/hls/sim/vhdl/hello_world.autotb.vhd" Line 615
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri May 23 20:01:13 2025...
+INFO: [COSIM 212-316] Starting C post checking ...
+Test passed !
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 22.221 seconds; peak allocated memory: 211.602 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 26s

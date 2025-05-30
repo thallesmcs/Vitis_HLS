@@ -1,0 +1,349 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Sat May 24 14:55:32 2025
+| Host         : PC-MEGA-POWER running 64-bit major release  (build 9200)
+| Command      : report_timing -max_paths 10 -file ./report/soma_timing_paths_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : 7z007s-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             7.060ns  (required time - arrival time)
+  Source:                 A[1]
+                            (input port)
+  Destination:            C[5]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        2.940ns  (logic 0.994ns (33.810%)  route 1.946ns (66.190%))
+  Logic Levels:           3  (CARRY4=2 LUT2=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  A[1] (IN)
+                         net (fo=0)                   0.973     0.973    bd_0_i/hls_inst/inst/A[1]
+                         LUT2 (Prop_lut2_I1_O)        0.124     1.097 r  bd_0_i/hls_inst/inst/C[0]_INST_0_i_3/O
+                         net (fo=1, unplaced)         0.000     1.097    bd_0_i/hls_inst/inst/C[0]_INST_0_i_3_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.630 r  bd_0_i/hls_inst/inst/C[0]_INST_0/CO[3]
+                         net (fo=1, unplaced)         0.000     1.630    bd_0_i/hls_inst/inst/C[0]_INST_0_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     1.967 r  bd_0_i/hls_inst/inst/C[4]_INST_0/O[1]
+                         net (fo=0)                   0.973     2.940    C[5]
+                                                                      r  C[5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -2.940    
+  -------------------------------------------------------------------
+                         slack                                  7.060    
+
+Slack (MET) :             7.066ns  (required time - arrival time)
+  Source:                 A[1]
+                            (input port)
+  Destination:            C[7]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        2.934ns  (logic 0.988ns (33.674%)  route 1.946ns (66.326%))
+  Logic Levels:           3  (CARRY4=2 LUT2=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  A[1] (IN)
+                         net (fo=0)                   0.973     0.973    bd_0_i/hls_inst/inst/A[1]
+                         LUT2 (Prop_lut2_I1_O)        0.124     1.097 r  bd_0_i/hls_inst/inst/C[0]_INST_0_i_3/O
+                         net (fo=1, unplaced)         0.000     1.097    bd_0_i/hls_inst/inst/C[0]_INST_0_i_3_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.630 r  bd_0_i/hls_inst/inst/C[0]_INST_0/CO[3]
+                         net (fo=1, unplaced)         0.000     1.630    bd_0_i/hls_inst/inst/C[0]_INST_0_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     1.961 r  bd_0_i/hls_inst/inst/C[4]_INST_0/O[3]
+                         net (fo=0)                   0.973     2.934    C[7]
+                                                                      r  C[7] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -2.934    
+  -------------------------------------------------------------------
+                         slack                                  7.066    
+
+Slack (MET) :             7.141ns  (required time - arrival time)
+  Source:                 A[1]
+                            (input port)
+  Destination:            C[6]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        2.859ns  (logic 0.913ns (31.934%)  route 1.946ns (68.066%))
+  Logic Levels:           3  (CARRY4=2 LUT2=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  A[1] (IN)
+                         net (fo=0)                   0.973     0.973    bd_0_i/hls_inst/inst/A[1]
+                         LUT2 (Prop_lut2_I1_O)        0.124     1.097 r  bd_0_i/hls_inst/inst/C[0]_INST_0_i_3/O
+                         net (fo=1, unplaced)         0.000     1.097    bd_0_i/hls_inst/inst/C[0]_INST_0_i_3_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.630 r  bd_0_i/hls_inst/inst/C[0]_INST_0/CO[3]
+                         net (fo=1, unplaced)         0.000     1.630    bd_0_i/hls_inst/inst/C[0]_INST_0_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     1.886 r  bd_0_i/hls_inst/inst/C[4]_INST_0/O[2]
+                         net (fo=0)                   0.973     2.859    C[6]
+                                                                      r  C[6] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -2.859    
+  -------------------------------------------------------------------
+                         slack                                  7.141    
+
+Slack (MET) :             7.165ns  (required time - arrival time)
+  Source:                 A[1]
+                            (input port)
+  Destination:            C[4]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        2.835ns  (logic 0.889ns (31.358%)  route 1.946ns (68.642%))
+  Logic Levels:           3  (CARRY4=2 LUT2=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  A[1] (IN)
+                         net (fo=0)                   0.973     0.973    bd_0_i/hls_inst/inst/A[1]
+                         LUT2 (Prop_lut2_I1_O)        0.124     1.097 r  bd_0_i/hls_inst/inst/C[0]_INST_0_i_3/O
+                         net (fo=1, unplaced)         0.000     1.097    bd_0_i/hls_inst/inst/C[0]_INST_0_i_3_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     1.630 r  bd_0_i/hls_inst/inst/C[0]_INST_0/CO[3]
+                         net (fo=1, unplaced)         0.000     1.630    bd_0_i/hls_inst/inst/C[0]_INST_0_n_0
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.232     1.862 r  bd_0_i/hls_inst/inst/C[4]_INST_0/O[0]
+                         net (fo=0)                   0.973     2.835    C[4]
+                                                                      r  C[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -2.835    
+  -------------------------------------------------------------------
+                         slack                                  7.165    
+
+Slack (MET) :             7.287ns  (required time - arrival time)
+  Source:                 A[1]
+                            (input port)
+  Destination:            C[3]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        2.713ns  (logic 0.767ns (28.271%)  route 1.946ns (71.729%))
+  Logic Levels:           2  (CARRY4=1 LUT2=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  A[1] (IN)
+                         net (fo=0)                   0.973     0.973    bd_0_i/hls_inst/inst/A[1]
+                         LUT2 (Prop_lut2_I1_O)        0.124     1.097 r  bd_0_i/hls_inst/inst/C[0]_INST_0_i_3/O
+                         net (fo=1, unplaced)         0.000     1.097    bd_0_i/hls_inst/inst/C[0]_INST_0_i_3_n_0
+                         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.643     1.740 r  bd_0_i/hls_inst/inst/C[0]_INST_0/O[3]
+                         net (fo=0)                   0.973     2.713    C[3]
+                                                                      r  C[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -2.713    
+  -------------------------------------------------------------------
+                         slack                                  7.287    
+
+Slack (MET) :             7.352ns  (required time - arrival time)
+  Source:                 A[1]
+                            (input port)
+  Destination:            C[2]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        2.648ns  (logic 0.702ns (26.511%)  route 1.946ns (73.489%))
+  Logic Levels:           2  (CARRY4=1 LUT2=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  A[1] (IN)
+                         net (fo=0)                   0.973     0.973    bd_0_i/hls_inst/inst/A[1]
+                         LUT2 (Prop_lut2_I1_O)        0.124     1.097 r  bd_0_i/hls_inst/inst/C[0]_INST_0_i_3/O
+                         net (fo=1, unplaced)         0.000     1.097    bd_0_i/hls_inst/inst/C[0]_INST_0_i_3_n_0
+                         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.578     1.675 r  bd_0_i/hls_inst/inst/C[0]_INST_0/O[2]
+                         net (fo=0)                   0.973     2.648    C[2]
+                                                                      r  C[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -2.648    
+  -------------------------------------------------------------------
+                         slack                                  7.352    
+
+Slack (MET) :             7.503ns  (required time - arrival time)
+  Source:                 A[0]
+                            (input port)
+  Destination:            C[1]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        2.497ns  (logic 0.551ns (22.066%)  route 1.946ns (77.934%))
+  Logic Levels:           2  (CARRY4=1 LUT2=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  A[0] (IN)
+                         net (fo=0)                   0.973     0.973    bd_0_i/hls_inst/inst/A[0]
+                         LUT2 (Prop_lut2_I1_O)        0.124     1.097 r  bd_0_i/hls_inst/inst/C[0]_INST_0_i_4/O
+                         net (fo=1, unplaced)         0.000     1.097    bd_0_i/hls_inst/inst/C[0]_INST_0_i_4_n_0
+                         CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.427     1.524 r  bd_0_i/hls_inst/inst/C[0]_INST_0/O[1]
+                         net (fo=0)                   0.973     2.497    C[1]
+                                                                      r  C[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -2.497    
+  -------------------------------------------------------------------
+                         slack                                  7.503    
+
+Slack (MET) :             7.678ns  (required time - arrival time)
+  Source:                 A[0]
+                            (input port)
+  Destination:            C[0]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        2.322ns  (logic 0.376ns (16.193%)  route 1.946ns (83.807%))
+  Logic Levels:           2  (CARRY4=1 LUT2=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  A[0] (IN)
+                         net (fo=0)                   0.973     0.973    bd_0_i/hls_inst/inst/A[0]
+                         LUT2 (Prop_lut2_I1_O)        0.124     1.097 r  bd_0_i/hls_inst/inst/C[0]_INST_0_i_4/O
+                         net (fo=1, unplaced)         0.000     1.097    bd_0_i/hls_inst/inst/C[0]_INST_0_i_4_n_0
+                         CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.252     1.349 r  bd_0_i/hls_inst/inst/C[0]_INST_0/O[0]
+                         net (fo=0)                   0.973     2.322    C[0]
+                                                                      r  C[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -2.322    
+  -------------------------------------------------------------------
+                         slack                                  7.678    
+
+Slack (MET) :             9.027ns  (required time - arrival time)
+  Source:                 ap_ctrl_start
+                            (input port)
+  Destination:            C_ap_vld
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.973ns  (logic 0.000ns (0.000%)  route 0.973ns (100.000%))
+  Logic Levels:           0  
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  ap_ctrl_start (IN)
+                         net (fo=-1, unset)           0.973     0.973    C_ap_vld
+                                                                      r  C_ap_vld (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.973    
+  -------------------------------------------------------------------
+                         slack                                  9.027    
+
+Slack (MET) :             9.027ns  (required time - arrival time)
+  Source:                 ap_ctrl_start
+                            (input port)
+  Destination:            ap_ctrl_done
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (MaxDelay Path 10.000ns)
+  Data Path Delay:        0.973ns  (logic 0.000ns (0.000%)  route 0.973ns (100.000%))
+  Logic Levels:           0  
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 10.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  ap_ctrl_start (IN)
+                         net (fo=-1, unset)           0.973     0.973    ap_ctrl_done
+                                                                      r  ap_ctrl_done (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   10.000    10.000    
+                         clock pessimism              0.000    10.000    
+                         output delay                -0.000    10.000    
+  -------------------------------------------------------------------
+                         required time                         10.000    
+                         arrival time                          -0.973    
+  -------------------------------------------------------------------
+                         slack                                  9.027    
+
+
+
+

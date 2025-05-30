@@ -1,0 +1,13 @@
+---
+MainSourceFile:  'D:/Projetos_HLS/hello_world/hello_world/hls/.autopilot/db/hello_world.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_7_1:  '
+    FileOffset:      7
+    FilePath:        hello_world.cpp
+    Replacements:    
+      - FilePath:        'D:\Projetos_HLS\hello_world\hello_world\hls\.autopilot\db\hello_world.pp.0.cpp'
+        Offset:          9870
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_7_1: '
+...

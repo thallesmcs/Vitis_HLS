@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "D:\\Projetos_HLS\\hello_world",
+    "arguments": [
+      "E:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=E:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=E:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=hello_world",
+      "-c",
+      "D:/Projetos_HLS/hello_world/hello_world.cpp"
+    ],
+    "file": "D:/Projetos_HLS/hello_world/hello_world.cpp"
+  },
+  {
+    "directory": "D:\\Projetos_HLS\\hello_world",
+    "arguments": [
+      "E:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=E:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=E:\\Xilinx\\Vitis\\2024.2\\include",
+      "-c",
+      "D:\\Projetos_HLS\\hello_world\\hello_world_tb.cpp"
+    ],
+    "file": "D:\\Projetos_HLS\\hello_world\\hello_world_tb.cpp"
+  }
+]

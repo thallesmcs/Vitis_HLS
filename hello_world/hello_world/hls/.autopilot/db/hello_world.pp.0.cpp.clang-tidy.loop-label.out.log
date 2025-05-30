@@ -1,0 +1,5 @@
+D:\Projetos_HLS\hello_world\hello_world\hls\.autopilot\db\hello_world.pp.0.cpp:172:9: warning: Added loop label VITIS_LOOP_7_1:   [xilinx-label-all-loops]
+        while (texto[i] != '\0') {
+        ^~~~~
+        VITIS_LOOP_7_1: 
+D:\Projetos_HLS\hello_world\hello_world\hls\.autopilot\db\hello_world.pp.0.cpp:172:9: note: FIX-IT applied suggested code changes

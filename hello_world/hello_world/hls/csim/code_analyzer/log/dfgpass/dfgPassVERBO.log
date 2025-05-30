@@ -1,0 +1,23 @@
+dfgPass::INFOR: DFG Pass going to run on Module: D:\Projetos_HLS\hello_world\hello_world\hls\csim\code_analyzer\.internal\instrument\app_0\project.symbols.bc
+dfgPass::INFOR:     Parsing the provided input trace files...
+dfgPass::INFOR:     Initializing InstructionCounter...
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:     +0 is not a loop
+dfgPass::VERBO:       - BEFORE BREAK
+dfgPass::VERBO:       - while.cond
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal offset is invalid:0:4
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::VERBO:       - while.body
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :mensagem:0
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :i:0
+dfgPass::VERBO:         - memlocal of :i:1
+dfgPass::VERBO:       - AFTER BREAK
+dfgPass::INFOR:     Parsing trace...
+dfgPass::INFOR:     End of the trace parse
