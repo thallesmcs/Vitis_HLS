@@ -1,0 +1,101 @@
+
+
+================================================================
+== Synthesis Summary Report of 'top_function'
+================================================================
++ General Information: 
+    * Date:           Wed Jun  4 18:01:44 2025
+    * Version:        2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:        add_sub
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z007s-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+----------+-----+
+    |     Modules    | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |   |          |     |
+    |     & Loops    | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP| FF|    LUT   | URAM|
+    +----------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+----------+-----+
+    |+ top_function  |     -|  4.75|        0|   0.000|         -|        1|     -|        no|     -|   -|  -|  78 (~0%)|    -|
+    +----------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++------------------+---------+-----------+----------+
+| Port             | Mode    | Direction | Bitwidth |
++------------------+---------+-----------+----------+
+| input_a_soma     | ap_none | in        | 32       |
+| input_a_sub      | ap_none | in        | 32       |
+| input_b_soma     | ap_none | in        | 32       |
+| input_b_sub      | ap_none | in        | 32       |
+| output_soma      | ap_vld  | out       | 32       |
+| output_subtracao | ap_vld  | out       | 32       |
++------------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------------+-----------+----------+
+| Argument         | Direction | Datatype |
++------------------+-----------+----------+
+| input_a_soma     | in        | int      |
+| input_b_soma     | in        | int      |
+| input_a_sub      | in        | int      |
+| input_b_sub      | in        | int      |
+| output_soma      | out       | int*     |
+| output_subtracao | out       | int*     |
++------------------+-----------+----------+
+
+* SW-to-HW Mapping
++------------------+-------------------------+---------+
+| Argument         | HW Interface            | HW Type |
++------------------+-------------------------+---------+
+| input_a_soma     | input_a_soma            | port    |
+| input_b_soma     | input_b_soma            | port    |
+| input_a_sub      | input_a_sub             | port    |
+| input_b_sub      | input_b_sub             | port    |
+| output_soma      | output_soma             | port    |
+| output_soma      | output_soma_ap_vld      | port    |
+| output_subtracao | output_subtracao        | port    |
+| output_subtracao | output_subtracao_ap_vld | port    |
++------------------+-------------------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------+-----+--------+----------+-----+--------+---------+
+| Name               | DSP | Pragma | Variable | Op  | Impl   | Latency |
++--------------------+-----+--------+----------+-----+--------+---------+
+| + top_function     | 0   |        |          |     |        |         |
+|   output_soma      |     |        | add_ln5  | add | fabric | 0       |
+|   output_subtracao |     |        | sub_ln10 | sub | fabric | 0       |
++--------------------+-----+--------+----------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+  No pragmas found
+

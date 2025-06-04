@@ -1,0 +1,32 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1 2",
+    "file": "top_level.cpp",
+    "fileloc": 4,
+    "instructions": 5,
+    "name": "top_function",
+    "stores": {
+      "T": 2
+    },
+    "total_instructions": 9
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "operacoes_aritmeticas.cpp",
+    "fileloc": 4,
+    "instructions": 2,
+    "name": "adicao",
+    "total_instructions": 2
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "operacoes_aritmeticas.cpp",
+    "fileloc": 9,
+    "instructions": 2,
+    "name": "subtracao",
+    "total_instructions": 2
+  }
+}

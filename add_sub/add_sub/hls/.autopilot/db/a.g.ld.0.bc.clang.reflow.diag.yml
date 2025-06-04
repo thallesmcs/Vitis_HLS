@@ -1,0 +1,91 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: top_level.cpp, Line: 9, Column: 20 }
+Function:        _Z12top_functioniiiiPiS_
+Args:            
+  - Callee:          'adicao(int, int)'
+    DebugLoc:        { File: operacoes_aritmeticas.cpp, Line: 4, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'top_function(int, int, int, int, int*, int*)'
+    DebugLoc:        { File: top_level.cpp, Line: 6, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: top_level.cpp, Line: 12, Column: 25 }
+Function:        _Z12top_functioniiiiPiS_
+Args:            
+  - Callee:          'subtracao(int, int)'
+    DebugLoc:        { File: operacoes_aritmeticas.cpp, Line: 9, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'top_function(int, int, int, int, int*, int*)'
+    DebugLoc:        { File: top_level.cpp, Line: 6, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: top_level.cpp, Line: 9, Column: 20 }
+Function:        _Z12top_functioniiiiPiS_
+Args:            
+  - Callee:          'adicao(int, int)'
+    DebugLoc:        { File: operacoes_aritmeticas.cpp, Line: 4, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'top_function(int, int, int, int, int*, int*)'
+    DebugLoc:        { File: top_level.cpp, Line: 6, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: top_level.cpp, Line: 12, Column: 25 }
+Function:        _Z12top_functioniiiiPiS_
+Args:            
+  - Callee:          'subtracao(int, int)'
+    DebugLoc:        { File: operacoes_aritmeticas.cpp, Line: 9, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'top_function(int, int, int, int, int*, int*)'
+    DebugLoc:        { File: top_level.cpp, Line: 6, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_top_function_ir
+Args:            
+  - Callee:          'top_function(int, int, int, int, int*, int*)'
+    DebugLoc:        { File: top_level.cpp, Line: 6, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_top_function_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: top_level.cpp, Line: 6, Column: 0 }
+Function:        _Z12top_functioniiiiPiS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'adicao(int, int)'
+    DebugLoc:        { File: operacoes_aritmeticas.cpp, Line: 4, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'top_function(int, int, int, int, int*, int*)'
+    DebugLoc:        { File: top_level.cpp, Line: 6, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: top_level.cpp, Line: 6, Column: 0 }
+Function:        _Z12top_functioniiiiPiS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'subtracao(int, int)'
+    DebugLoc:        { File: operacoes_aritmeticas.cpp, Line: 9, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'top_function(int, int, int, int, int*, int*)'
+    DebugLoc:        { File: top_level.cpp, Line: 6, Column: 0 }
+  - String:          ''''
+...

@@ -1,0 +1,12 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="top_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=top_function" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="top_level.cpp:6:0" msg_body="Inlining function 'adicao(int, int)' into 'top_function(int, int, int, int, int*, int*)'">
+        <args Callee="adicao(int, int)" Callee-DebugLoc="File operacoes_aritmeticas.cpp Line 4 Column 0" Caller="top_function(int, int, int, int, int*, int*)" Caller-DebugLoc="File top_level.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="top_level.cpp:6:0" msg_body="Inlining function 'subtracao(int, int)' into 'top_function(int, int, int, int, int*, int*)'">
+        <args Callee="subtracao(int, int)" Callee-DebugLoc="File operacoes_aritmeticas.cpp Line 9 Column 0" Caller="top_function(int, int, int, int, int*, int*)" Caller-DebugLoc="File top_level.cpp Line 6 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

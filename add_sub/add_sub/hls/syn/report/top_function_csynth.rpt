@@ -1,0 +1,118 @@
+
+
+================================================================
+== Vitis HLS Report for 'top_function'
+================================================================
+* Date:           Wed Jun  4 18:01:44 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        add_sub
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z007s-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.552 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP|   FF  |  LUT  | URAM|
++-----------------+---------+----+-------+-------+-----+
+|DSP              |        -|   -|      -|      -|    -|
+|Expression       |        -|   -|      0|     78|    -|
+|FIFO             |        -|   -|      -|      -|    -|
+|Instance         |        -|   -|      -|      -|    -|
+|Memory           |        -|   -|      -|      -|    -|
+|Multiplexer      |        -|   -|      -|      -|    -|
+|Register         |        -|   -|      -|      -|    -|
++-----------------+---------+----+-------+-------+-----+
+|Total            |        0|   0|      0|     78|    0|
++-----------------+---------+----+-------+-------+-----+
+|Available        |      100|  66|  28800|  14400|    0|
++-----------------+---------+----+-------+-------+-----+
+|Utilization (%)  |        0|   0|      0|     ~0|    0|
++-----------------+---------+----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------+----------+----+---+----+------------+------------+
+    |   Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------+----------+----+---+----+------------+------------+
+    |output_soma       |         +|   0|  0|  39|          32|          32|
+    |output_subtracao  |         -|   0|  0|  39|          32|          32|
+    +------------------+----------+----+---+----+------------+------------+
+    |Total             |          |   0|  0|  78|          64|          64|
+    +------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+------------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++-------------------------+-----+-----+------------+------------------+--------------+
+|ap_start                 |   in|    1|  ap_ctrl_hs|      top_function|  return value|
+|ap_done                  |  out|    1|  ap_ctrl_hs|      top_function|  return value|
+|ap_idle                  |  out|    1|  ap_ctrl_hs|      top_function|  return value|
+|ap_ready                 |  out|    1|  ap_ctrl_hs|      top_function|  return value|
+|ap_rst                   |   in|    1|  ap_ctrl_hs|      top_function|  return value|
+|input_a_soma             |   in|   32|     ap_none|      input_a_soma|        scalar|
+|input_b_soma             |   in|   32|     ap_none|      input_b_soma|        scalar|
+|input_a_sub              |   in|   32|     ap_none|       input_a_sub|        scalar|
+|input_b_sub              |   in|   32|     ap_none|       input_b_sub|        scalar|
+|output_soma              |  out|   32|      ap_vld|       output_soma|       pointer|
+|output_soma_ap_vld       |  out|    1|      ap_vld|       output_soma|       pointer|
+|output_subtracao         |  out|   32|      ap_vld|  output_subtracao|       pointer|
+|output_subtracao_ap_vld  |  out|    1|      ap_vld|  output_subtracao|       pointer|
++-------------------------+-----+-----+------------+------------------+--------------+
+
