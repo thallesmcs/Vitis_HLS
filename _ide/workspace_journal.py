@@ -6,3 +6,7 @@ client.set_workspace(path="D:/Vitis_HLS")
 
 comp = client.create_hls_component(name = "teste",cfg_file = ["hls_config.cfg"],template = "empty_hls_component")
 
+client.delete_component(name="teste")
+
+client.delete_component(name="teste")
+
