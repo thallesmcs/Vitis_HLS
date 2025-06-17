@@ -1,19 +1,8 @@
-# 2025-06-04T17:32:04.718362600
+# 2025-06-17T11:08:19.488052700
 import vitis
 
 client = vitis.create_client()
-client.set_workspace(path="projeto_hls")
+client.set_workspace(path="D:/Vitis_HLS")
 
-client.delete_component(name="helloworld_functions")
-
-comp = client.create_hls_component(name = "add_sub",cfg_file = ["hls_config.cfg"],template = "empty_hls_component")
-
-comp = client.get_component(name="add_sub")
-comp.run(operation="SYNTHESIS")
-
-comp.run(operation="SYNTHESIS")
-
-comp.run(operation="SYNTHESIS")
-
-comp.run(operation="IMPLEMENTATION")
+comp = client.create_hls_component(name = "teste",cfg_file = ["hls_config.cfg"],template = "empty_hls_component")
 

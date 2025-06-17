@@ -1,15 +1,15 @@
 [
   {
-    "directory": "D:\\Projetos_HLS\\adder",
+    "directory": "D:\\Vitis_HLS\\adder",
     "arguments": [
-      "E:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=E:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
       "-fhls",
-      "-hls-syn-headers-dir=E:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
       "-fhlstoplevel=adder",
       "-c",
-      "D:\\Projetos_HLS\\adder\\adder.cpp"
+      "D:\\Vitis_HLS\\adder\\adder.cpp"
     ],
-    "file": "D:\\Projetos_HLS\\adder\\adder.cpp"
+    "file": "D:\\Vitis_HLS\\adder\\adder.cpp"
   }
 ]
